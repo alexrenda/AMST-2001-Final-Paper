@@ -1,6 +1,10 @@
 \documentclass[12pt]{article}
 \usepackage[utf8]{inputenc}
 \usepackage{datetime}
+\usepackage{cite}
+\usepackage{lscape}
+\usepackage{tikz}
+\usetikzlibrary{arrows}
 
 \newdateformat{monthyeardate}{\monthname[\THEMONTH], \THEYEAR}
 
@@ -18,113 +22,126 @@
 
 \section{Timeline}
 
-``The CUAUV team, as we know it today, was started by sophomores Serguei Vassilvitskii, Nidhi Kalra, Jack Chuang, and Walter Chang in September of 1999,''
-https://www.cs.cornell.edu/boom/2003sp/ProjectArch/CUAUV/brainteam.org/history.htm
+\begin{landscape}
+\include{timeline}
+\end{landscape}
 
-``Cornell Racing is the "granddaddy" of engineering project teams, says Rebecca Macdonald, the Swanson Director of Engineering Student Project Teams at Cornell,''  http://ezramagazine.cornell.edu/Update/July15/EU.eng.proj.teams.html
+``The CUAUV team, as we know it today, was started by sophomores Serguei Vassilvitskii, Nidhi Kalra, Jack Chuang, and Walter Chang in September of 1999,''
+\cite{noauthor_cuauv_2003}
+
+``Cornell Racing is the "granddaddy" of engineering project teams, says Rebecca Macdonald, the Swanson Director of Engineering Student Project Teams at Cornell,''
+\cite{klein_engineering_2015}
 
 ``Cornell’s Formula SAE Team was established in 1986.''
-https://www.cornellfsae.com/about.html
+\cite{noauthor_cornell_2012}
 
 Baja established in 2005:
-https://baja.mae.cornell.edu/history.html
+\cite{noauthor_history_2017}
 
 ``Cornell participated in this competition as part of OpenLoop, a team of students from Cornell, Harvey Mudd College, University of Michigan, Northeastern, Memorial University of Newfoundland, and Princeton.  OpenLoop’s design for the pod prototype made it through the initial rounds, but the team was not able to build the pod prototype.
 
 But in Fall 2016, Cornell Hyperloop broke off from OpenLoop, and is determined to win SpaceX 2018 Hyperloop Pod Competition in summer 2018.''
-http://www.slopemedia.org/cornell-hyperloop-changing-way-travel/
+\cite{roseman_how_2017}
 
 ``While they couldn’t register immediately as a team, says Rebecca Macdonald, the Swanson Director of Engineering Student Project Teams, they were welcome to find an advisor and form a club.''
-https://web.mae.cornell.edu/magazine/features/openloop.cfm
+\cite{giller_openloop:_2016}
 
 
 Concrete Canoe established in 2000:
-http://cornellconcretecanoe.com/history.php
+\cite{noauthor_cornell_2017}
 
 CU Solar Boat established in 2016:
-http://cusolarboat.org/goals
+\cite{noauthor_cu_2017}
 
-Autonomous Bike established in 2015:
-https://bike.engineering.cornell.edu/papers.html
+Autonomous Bike established in 2014:
+\cite{murphy_cu_2017}
 
 CUAir founded 2002:
-https://cuair.org/index.html
+\cite{noauthor_cuair_2017}
 
 CMR founded 2010:
-https://marsrover.engineering.cornell.edu
+\cite{noauthor_cornell_2018}
 
 CUSail founded 2014:
-https://cusail.engineering.cornell.edu
+\cite{noauthor_cu_2017-1}
 
 Resistance Racing founded 2014:
-http://blogs.cornell.edu/resistanceracing/sample-page/
+\cite{noauthor_about_2015}
 
 Engineering World Health founded 2012:
-https://ewh.engineering.cornell.edu
+\cite{noauthor_cornell_2017-1}
 
 Cornell ACM Programming founded around 1998?:
-http://teams.engineering.cornell.edu/teams.html
+\cite{noauthor_cornell_2016}
+Active in 2006:
+\cite{noauthor_cornell_2018-1}
 
 ``AppDev started as a team of less than 20 students in Fall 2014 with a sole focus on iOS app development.''
-https://medium.com/@cornellappdev/introducing-cornell-appdev-616722c59f11
+\cite{cornell_appdev_introducing_2018}
 
 ``The Data Science Club was formed in January 2014''
-http://orgsync.rso.cornell.edu/org/datascienceclub/About
+\cite{noauthor_cornell_2014}
 
 ``In 2005, the AguaClara Program was founded at Cornell University''
-http://aguaclara.cee.cornell.edu
+\cite{noauthor_aguaclara_nodate}
 
 ChemE Car: 2004
-https://chemecar.engineering.cornell.edu
+\cite{noauthor_cornell_2017-2}
 
 ``ESW Biofuels began in 2013''
-https://eswbiofuels.engineering.cornell.edu
+\cite{noauthor_esw_nodate}
 
-Steel bridge: 1993 (http://www.cee.cornell.edu/academics/undergraduate/upload/CEE_Handbook_2011-2012_Web-Copy.pdf), probably earlier (founded in 1987: http://steelstructures.com/wp-content/uploads/2016/03/Bridging-the-Gap-Classroom-Learning-to-Hands-On-Experience.pdf)
+Steel bridge: 1993
+\cite{noauthor_cee_2011}
+probably earlier (founded in 1987 \cite{robert_e._shaw_jr._bridging_1988})
 
 Cornell Seismic Design: 2014
-http://blogs.cornell.edu/seismicdesignteam/competitions/2014-competition/
+\cite{noauthor_2014_2014}
 
 Design Build Fly: 2011
-https://dbf.engineering.cornell.edu/about.html
+\cite{noauthor_design/build/fly_nodate}
 
 ``Officially formed as an engineering project team and student chapter of EWB during the 2011-2012 academic year''
-https://ewbcornell.wordpress.com/team/
+\cite{noauthor_our_2016}
 
 Cornell rocketry: ``Founded in 2013''
-http://cornellrocketryteam.com/nasa.html
+\cite{noauthor_cornell_2015}
 
 Cornell iGEM: 2009
-http://2009.igem.org/Team:Cornell/Team
+\cite{noauthor_team:cornell/team_2009}
 
 Bridges to Prosperity: 2017 (``4 students formed this project team this year'')
-https://givingday.cornell.edu/campaigns/cu-bridges-to-prosperity
+\cite{noauthor_give_2018}
 
 ``The Cornell Cup Robotics project team has been a part of the Cornell Engineering community since 2010''
-http://cornellcuprobotics.com
+\cite{noauthor_cornell_2018-2}
 
 Cornell Micro-G: 2016
-http://cornellsun.com/2016/03/22/student-team-crafts-tools-to-collect-rocks-from-asteroids/
+\cite{ghosh_student_2016}
 
 Cornell Design and Tech Initiative: Fall 2015
-https://www.linkedin.com/company/cornell-design-tech-initiative/
+\cite{noauthor_cornell_2018-3}
 
 Cornell DEBUT: 2017
-https://www.linkedin.com/company/cornell-debut-biomedical-engineering-project-team/
+\cite{noauthor_cornell_2018-4}
 
 
 
 
 ``The Cornell Data Science project team will launch an unofficial student-led training course this semester — taught and developed entirely by Cornell students — to help students gain hands-on experience in the increasingly valuable skills of statistical methods and programming languages.''
-http://cornellsun.com/2017/01/24/cornell-data-science-launches-student-led-training-course-in-statistical-methods-programming-languages/
+\cite{si_cornell_2017}
 ^^ also appdev does this
 
-``A quarter of all undergraduate engineering students participate on a growing number of project teams -- 23 in 2014-15'' http://ezramagazine.cornell.edu/Update/July15/EU.eng.proj.teams.html
+``A quarter of all undergraduate engineering students participate on a growing number of project teams -- 23 in 2014-15''
+\cite{klein_engineering_2015}
 
-
-http://news.cornell.edu/stories/2012/04/10m-gift-boosts-undergraduate-education-engineering
+\cite{emily_hopkins_10_2012}
+\cite{noauthor_q&rebecca_2014}
 
 \section{Case Study: CUAUV}
+Bar
 
+\bibliographystyle{plain}
+\bibliography{final}
 
 \end{document}

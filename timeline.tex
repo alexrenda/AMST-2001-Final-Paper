@@ -1,10 +1,4 @@
-\documentclass{standalone}
-\usepackage{tikz}
-\usetikzlibrary{arrows}
-
-\begin{document}
-
-\begin{tikzpicture}[x=0.8cm,y=0.5cm]
+\begin{tikzpicture}[x=0.5cm, y=0.44cm]
 
 \draw[dashed] (1, 8) -- (3, 8);
 \node[right] at (3, 8) {Unknown Status};
@@ -12,7 +6,7 @@
 \draw (1, 7) -- (3, 7);
 \node[right] at (3, 7) {Operational};
 
-\draw (0.5,5) -- (0.5,10) -- (6.5,10) -- (6.5,5) -- (0.5,5);
+\draw (0.5,5) -- (0.5,10) -- (9.5,10) -- (9.5,5) -- (0.5,5);
 
 
 \node[above] at (0, 29) {1985};
@@ -30,9 +24,12 @@
 \draw[dashed, thick] (5, 10) -- (5, 29);
 \draw[dashed] (6, 0) -- (6, 5);
 \draw[dashed] (6, 10) -- (6, 29);
-\draw[dashed] (7, 0) -- (7, 29);
-\draw[dashed] (8, 0) -- (8, 29);
-\draw[dashed] (9, 0) -- (9, 29);
+\draw[dashed] (7, 0) -- (7, 5);
+\draw[dashed] (7, 10) -- (7, 29);
+\draw[dashed] (8, 0) -- (8, 5);
+\draw[dashed] (8, 10) -- (8, 29);
+\draw[dashed] (9, 0) -- (9, 5);
+\draw[dashed] (9, 10) -- (9, 29);
 \node[above] at (10, 29) {1995};
 \draw[dashed, thick] (10, 0) -- (10, 29);
 \draw[dashed] (11, 0) -- (11, 29);
@@ -60,7 +57,7 @@
 \node[above] at (30, 29) {2015};
 \draw[dashed, thick] (30, 0) -- (30, 29);
 \draw[dashed] (31, 0) -- (31, 29);
-\node[above] at (32, 29) {2017};
+%\node[above] at (32, 29) {2017};
 \draw[dashed] (32, 0) -- (32, 29);
 
 
@@ -154,12 +151,12 @@
 \node [right] at (33, 7) {Resistance Racing};
 \draw[o->] (29, 7) -- (33, 7);
 
-% Cornell Design and Tech Initiative: 2015
-\node [right] at (33, 6) {Design and Tech Initiative};
-\draw[o->] (30, 6) -- (33, 6);
+% Autonomous Bike: 2014
+\node [right] at (33, 6) {Autonomous Bike};
+\draw[o->] (29, 6) -- (33, 6);
 
-% Autonomous Bike: 2015
-\node [right] at (33, 5) {Autonomous Bike};
+% Cornell Design and Tech Initiative: 2015
+\node [right] at (33, 5) {Design and Tech Initiative};
 \draw[o->] (30, 5) -- (33, 5);
 
 % Cornell Hyperloop: 2016
@@ -183,4 +180,7 @@
 \draw[o->] (32, 0) -- (33, 0);
 
 \end{tikzpicture}
-\end{document}
+
+%%% Local Variables:
+%%% TeX-master: "report"
+%%% End:
