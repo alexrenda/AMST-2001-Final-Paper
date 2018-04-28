@@ -4,11 +4,14 @@
 \usepackage{cite}
 \usepackage{url}
 \usepackage[numbers]{natbib}
+\usepackage{xcolor}
 \usepackage{lscape}
 \usepackage{tikz}
 \usetikzlibrary{arrows}
 
 \newdateformat{monthyeardate}{\monthname[\THEMONTH], \THEYEAR}
+
+\newcommand{\todo}[1]{{\color{red}[\textbf{TODO:} #1]}}
 
 \title{History of Project Teams at Cornell}
 \author{Alex Renda (adr74)}
@@ -20,22 +23,48 @@
 
 \section{Introduction}
 
+Project teams are a core part of the College of Engineering at Cornell.
+In 2015, Kate Klein noted that ``a quarter of all undergraduate engineering students participate on a growing number of project teams''~\cite{klein_engineering_2015}.
+This number has only grown since then:
+``as of 2018, there are 29 different project teams, with over 1,100 students and over \$1,000,000 in funding''~\cite{noauthor_project_2018}.
+With 3,116 undergraduate students in engineering~\cite{westervelt_key_2017}, over a third of engineering students are currently on project teams, higher than the percentage of Cornell students in Greek life~\cite{noauthor_sorority_2017}.
+Despite these impressive numbers, there is relatively little literature on the history and current status of engineering project teams at Cornell.
+As of the time of writing this report, the endowed position of project team director is vacant, and there is nearly no official university information about the new lab space for teams, or nearly of the many project teams formed in the past several years.
+
+In this report, I will attempt to remedy some of that lack of information.
+In Section~\ref{sec:background}, I will detail the background of project teams at Cornell, including the origins of some of the oldest project teams at Cornell, along with the creation of project teams as an official program at Cornell.
+In Section~\ref{sec:timeline}, I will discuss the general timeline of project teams at Cornell, including the explosion in popularity in recent years.
+In Section~\ref{sec:funding}, I will investigate the sources of funding for project teams at Cornell. \todo{is this needed}
+Finally, in Section~\ref{sec:cuauv}, I will delve into the history of a specific project team, the Cornell University Autonomous Underwater Vehicle team (CUAUV), to explore how rich the history is for just one of Cornell's 29 thriving student-led project teams.
+
 \section{Background}
+\label{sec:background}
+While practical projects have been a part of engineering curricula since time immemorial, it has only been in the past 30 or so years that student-run teams to compete in extracurricular challenges or solve societal problems have come into their own at Cornell.
+
+According the Rebecca Macdonald, the former Swanson Directory of Engineering Student Project Teams, ``Cornell Racing is the "granddaddy" of engineering project teams''~\cite{klein_engineering_2015}. Cornell Racing was formed in 1986~\cite{noauthor_cornell_2012} to compete in Formula SAE, a competition inaugurated in 1981 in which students design and build a racecar to compete in a Formula One style race~\cite{sae_international_formula_2018}.
+
 
 \section{Timeline}
+\label{sec:timeline}
+
+\section{Funding}
+\label{sec:funding}
+
+\section{Case Study: CUAUV}
+\label{sec:cuauv}
+
+Project
 
 \begin{landscape}
-\include{timeline}
+  \begin{figure}
+    \include{timeline}
+    \caption{Timeline of current project teams at Cornell}
+    \label{fig:timeline}
+  \end{figure}
 \end{landscape}
 
 ``The CUAUV team, as we know it today, was started by sophomores Serguei Vassilvitskii, Nidhi Kalra, Jack Chuang, and Walter Chang in September of 1999,''
 \cite{noauthor_cuauv_2003}
-
-``Cornell Racing is the "granddaddy" of engineering project teams, says Rebecca Macdonald, the Swanson Director of Engineering Student Project Teams at Cornell,''
-\cite{klein_engineering_2015}
-
-``Cornell’s Formula SAE Team was established in 1986.''
-\cite{noauthor_cornell_2012}
 
 Baja established in 2005:
 \cite{noauthor_history_2017}
@@ -134,8 +163,6 @@ Cornell DEBUT: 2017
 \cite{si_cornell_2017}
 ^^ also appdev does this
 
-``A quarter of all undergraduate engineering students participate on a growing number of project teams -- 23 in 2014-15''
-\cite{klein_engineering_2015}
 
 \cite{emily_hopkins_10_2012}
 \cite{noauthor_q&rebecca_2014}
