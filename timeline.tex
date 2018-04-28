@@ -1,0 +1,186 @@
+\documentclass{standalone}
+\usepackage{tikz}
+\usetikzlibrary{arrows}
+
+\begin{document}
+
+\begin{tikzpicture}[x=0.8cm,y=0.5cm]
+
+\draw[dashed] (1, 8) -- (3, 8);
+\node[right] at (3, 8) {Unknown Status};
+
+\draw (1, 7) -- (3, 7);
+\node[right] at (3, 7) {Operational};
+
+\draw (0.5,5) -- (0.5,10) -- (6.5,10) -- (6.5,5) -- (0.5,5);
+
+
+\node[above] at (0, 29) {1985};
+\draw[dashed, thick] (0, 0) -- (0, 29);
+\draw[dashed] (1, 0) -- (1, 5);
+\draw[dashed] (1, 10) -- (1, 29);
+\draw[dashed] (2, 0) -- (2, 5);
+\draw[dashed] (2, 10) -- (2, 29);
+\draw[dashed] (3, 0) -- (3, 5);
+\draw[dashed] (3, 10) -- (3, 29);
+\draw[dashed] (4, 0) -- (4, 5);
+\draw[dashed] (4, 10) -- (4, 29);
+\node[above] at (5, 29) {1990};
+\draw[dashed, thick] (5, 0) -- (5, 5);
+\draw[dashed, thick] (5, 10) -- (5, 29);
+\draw[dashed] (6, 0) -- (6, 5);
+\draw[dashed] (6, 10) -- (6, 29);
+\draw[dashed] (7, 0) -- (7, 29);
+\draw[dashed] (8, 0) -- (8, 29);
+\draw[dashed] (9, 0) -- (9, 29);
+\node[above] at (10, 29) {1995};
+\draw[dashed, thick] (10, 0) -- (10, 29);
+\draw[dashed] (11, 0) -- (11, 29);
+\draw[dashed] (12, 0) -- (12, 29);
+\draw[dashed] (13, 0) -- (13, 29);
+\draw[dashed] (14, 0) -- (14, 29);
+\node[above] at (15, 29) {2000};
+\draw[dashed, thick] (15, 0) -- (15, 29);
+\draw[dashed] (16, 0) -- (16, 29);
+\draw[dashed] (17, 0) -- (17, 29);
+\draw[dashed] (18, 0) -- (18, 29);
+\draw[dashed] (19, 0) -- (19, 29);
+\node[above] at (20, 29) {2005};
+\draw[dashed, thick] (20, 0) -- (20, 29);
+\draw[dashed] (21, 0) -- (21, 29);
+\draw[dashed] (22, 0) -- (22, 29);
+\draw[dashed] (23, 0) -- (23, 29);
+\draw[dashed] (24, 0) -- (24, 29);
+\node[above] at (25, 29) {2010};
+\draw[dashed, thick] (25, 0) -- (25, 29);
+\draw[dashed] (26, 0) -- (26, 29);
+\draw[dashed] (27, 0) -- (27, 29);
+\draw[dashed] (28, 0) -- (28, 29);
+\draw[dashed] (29, 0) -- (29, 29);
+\node[above] at (30, 29) {2015};
+\draw[dashed, thick] (30, 0) -- (30, 29);
+\draw[dashed] (31, 0) -- (31, 29);
+\node[above] at (32, 29) {2017};
+\draw[dashed] (32, 0) -- (32, 29);
+
+
+% Cornell Racing: 1986
+\node [right] at (33, 28) {Cornell Racing};
+\draw[o->] (1, 28) -- (33, 28);
+
+% Steel Bridge: 1987 -- 1993 - pres
+\node [right] at (33, 27) {Steel Bridge};
+\draw[dashed, o-] (2, 27) -- (8, 27);
+\draw[o->] (8, 27) -- (33, 27);
+
+% Cornell ACM Programming: 1998 -- 2006 - pres
+\node [right] at (33, 26) {ACM Programming};
+\draw[dashed, o-] (13, 26) -- (21, 26);
+\draw[o->] (21, 26) -- (33, 26);
+
+% CUAUV: 1999
+\node [right] at (33, 25) {CUAUV};
+\draw[o->] (14, 25) -- (33, 25);
+
+% Concrete Canoe: 2000
+\node [right] at (33, 24) {Concrete Canoe};
+\draw[o->] (15, 24) -- (33, 24);
+
+% CUAir: 2002
+\node [right] at (33, 23) {CUAir};
+\draw[o->] (17, 23) -- (33, 23);
+
+% ChemE Car: 2004
+\node [right] at (33, 22) {ChemE Car};
+\draw[o->] (19, 22) -- (33, 22);
+
+% AguaClara: 2005
+\node [right] at (33, 21) {AguaClara};
+\draw[o->] (20, 21) -- (33, 21);
+
+% Baja Racing: 2005
+\node [right] at (33, 20) {Baja Racing};
+\draw[o->] (20, 20) -- (33, 20);
+
+% iGEM: 2009
+\node [right] at (33, 19) {iGEM};
+\draw[o->] (24, 19) -- (33, 19);
+
+% Cornell Cup Robotics: 2010
+\node [right] at (33, 18) {Cornell Cup Robotics};
+\draw[o->] (25, 18) -- (33, 18);
+
+% Cornell Mars Rover: 2010
+\node [right] at (33, 17) {Cornell Mars Rover};
+\draw[o->] (25, 17) -- (33, 17);
+
+% Design, Build, Fly: 2011
+\node [right] at (33, 16) {Design, Build, Fly};
+\draw[o->] (26, 16) -- (33, 16);
+
+% Engineers Without Borders: 2011
+\node [right] at (33, 15) {Engineers Without Borders};
+\draw[o->] (26, 15) -- (33, 15);
+
+% Engineering World Health: 2012
+\node [right] at (33, 14) {Engineering World Health};
+\draw[o->] (27, 14) -- (33, 14);
+
+% Cornell Rocketry: 2013
+\node [right] at (33, 13) {Cornell Rocketry};
+\draw[o->] (28, 13) -- (33, 13);
+
+% ESW Biofuels: 2013
+\node [right] at (33, 12) {ESW BioFuels};
+\draw[o->] (28, 12) -- (33, 12);
+
+% CU AppDev: 2014
+\node [right] at (33, 11) {CU AppDev};
+\draw[o->] (29, 11) -- (33, 11);
+
+% CUSail: 2014
+\node [right] at (33, 10) {CUSail};
+\draw[o->] (29, 10) -- (33, 10);
+
+% Cornell Data Science: 2014
+\node [right] at (33, 9) {Cornell Data Science};
+\draw[o->] (29, 9) -- (33, 9);
+
+% Cornell Seismic Design: 2014
+\node [right] at (33, 8) {Cornell Seismic Design};
+\draw[o->] (29, 8) -- (33, 8);
+
+% Resistance Racing: 2014
+\node [right] at (33, 7) {Resistance Racing};
+\draw[o->] (29, 7) -- (33, 7);
+
+% Cornell Design and Tech Initiative: 2015
+\node [right] at (33, 6) {Design and Tech Initiative};
+\draw[o->] (30, 6) -- (33, 6);
+
+% Autonomous Bike: 2015
+\node [right] at (33, 5) {Autonomous Bike};
+\draw[o->] (30, 5) -- (33, 5);
+
+% Cornell Hyperloop: 2016
+\node [right] at (33, 4) {Cornell Hyperloop};
+\draw[o->] (31, 4) -- (33, 4);
+
+% CU Solar Boat: 2016
+\node [right] at (33, 3) {CU Solar Boat};
+\draw[o->] (31, 3) -- (33, 3);
+
+% Cornell Micro-G: 2016
+\node [right] at (33, 2) {Cornell Micro-G};
+\draw[o->] (31, 2) -- (33, 2);
+
+% Bridges to Prosperity: 2017
+\node [right] at (33, 1) {Bridges to Prosperity};
+\draw[o->] (32, 1) -- (33, 1);
+
+% Cornell DEBUT: 2017
+\node [right] at (33, 0) {Cornell DEBUT};
+\draw[o->] (32, 0) -- (33, 0);
+
+\end{tikzpicture}
+\end{document}
