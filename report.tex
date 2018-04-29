@@ -2,7 +2,7 @@
 \usepackage[utf8]{inputenc}
 \usepackage{datetime}
 \usepackage{cite}
-\usepackage{url}
+\usepackage[hyphens]{url}
 \usepackage[numbers]{natbib}
 \usepackage{xcolor}
 \usepackage{lscape}
@@ -12,6 +12,7 @@
 \newdateformat{monthyeardate}{\monthname[\THEMONTH], \THEYEAR}
 
 \newcommand{\todo}[1]{{\color{red}[\textbf{TODO:} #1]}}
+\renewcommand*{\bibfont}{\raggedright}
 
 \title{History of Project Teams at Cornell}
 \author{Alex Renda (adr74)}
@@ -54,27 +55,24 @@ The renovation was completed and project teams moved in during August 2017, prov
 
 Unfortunately, although Rebecca Macdonald was in large part responsible for the creation of the project team space during the Upson renovation~\cite{noauthor_q&rebecca_2014}, she departed during the summer of 2017~\cite{macdonald_thank_2017}, and was temporarily replaced by Mike Thompson~\cite{ivory_thank_2017} pending appointment of another Swanson Director of Engineering Student Project Teams.
 
-
-\todo{courses taught}
-
-``The Cornell Data Science project team will launch an unofficial student-led training course this semester — taught and developed entirely by Cornell students — to help students gain hands-on experience in the increasingly valuable skills of statistical methods and programming languages.''
-\cite{si_cornell_2017}
-^^ also appdev does this
+Through this all, project teams have become more and more relevant on campus, even outside of their immediate membership.
+There is probably no better place to see this than in the unofficial courses that some project teams have started teaching.
+For instance, as of 2017, ``The Cornell Data Science project team will launch an unofficial student-led training course this semester — taught and developed entirely by Cornell students — to help students gain hands-on experience in the increasingly valuable skills of statistical methods and programming languages.''~\cite{si_cornell_2017}.
+Similar 2-credit courses are also offered by Cornell AppDev~\cite{noauthor_cornell_2018-5}, impacting people outside of just the engineering department or the people on the project teams.
 
 \section{Timeline}
 \label{sec:timeline}
 
-\todo{Quote Alana on Hyperloop}
+\begin{figure}
+  \center
+  \includegraphics[width=0.7\textwidth]{teams-vs-cs}
+  \caption{Number of project teams vs number of enrolled CS students~\cite{snabes_computer_2016}}
+  \label{fig:teamcount}
+\end{figure}
 
-``Cornell participated in this competition as part of OpenLoop, a team of students from Cornell, Harvey Mudd College, University of Michigan, Northeastern, Memorial University of Newfoundland, and Princeton.  OpenLoop’s design for the pod prototype made it through the initial rounds, but the team was not able to build the pod prototype.
-
-But in Fall 2016, Cornell Hyperloop broke off from OpenLoop, and is determined to win SpaceX 2018 Hyperloop Pod Competition in summer 2018.''
-\cite{roseman_how_2017}
-
-``While they couldn’t register immediately as a team, says Rebecca Macdonald, the Swanson Director of Engineering Student Project Teams, they were welcome to find an advisor and form a club.''
-\cite{giller_openloop:_2016}
-
-
+As discussed in Section~\ref{sec:background}, the oldest project teams at Cornell date back 20-30 years.
+Most, however, follow a more Zipfian distribution, with over two thirds of them having been started in the last 10 years, and nearly half being started in the last 5.
+``We registered Hyperloop as a project team because that was the best way to get resources and support from Cornell for our project'' said Alana Marzoev (a founding team lead of the Cornell Hyperloop project team) when asked about why she helped form Cornell Hyperloop as a project team rather than just the club that it was before~\cite{marzoev_rationale_2018}.
 
 \begin{landscape}
   \begin{figure}
@@ -83,6 +81,11 @@ But in Fall 2016, Cornell Hyperloop broke off from OpenLoop, and is determined t
     \label{fig:timeline}
   \end{figure}
 \end{landscape}
+
+These overall trends can be explained by a number of factors.
+Most importantly is simply money: 2012 saw an official endowment and source of university funding for project teams, meaning that there is more incentive and rationale to create a project team.
+The explosion in number of project teams also tracks the explosion in number of enrolled Computer Science students (Figure~\ref{fig:teamcount}.
+Given that a quarter of the project teams created in the last four years are primarily CS-related (CU AppDev, Cornell Data Science, and Design and Tech Initiative) and the majority of the rest have a CS component, the rapid increase in project teams and CS students could easily be related.
 
 
 \section{Case Study: CUAUV}
