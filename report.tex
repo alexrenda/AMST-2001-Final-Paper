@@ -1,10 +1,12 @@
 \documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
 \usepackage[utf8]{inputenc}
 \usepackage{datetime}
+\usepackage{caption}
 \usepackage{cite}
 \usepackage[hyphens]{url}
 \usepackage[numbers]{natbib}
-\usepackage{xcolor}
+\usepackage[table, dvipsnames]{xcolor}
 \usepackage{lscape}
 \usepackage{tikz}
 \usetikzlibrary{arrows}
@@ -25,6 +27,7 @@
 \section{Introduction}
 
 Project teams are a core part of the College of Engineering at Cornell.
+These groups have disparate goals, from building racecars and bridges to designing phone apps for social good, but one commonality links them all: they are entirely student-led and student-run, and they provide a home for students across Cornell, both within engineering and outside of it.
 In 2015, Kate Klein noted that ``a quarter of all undergraduate engineering students participate on a growing number of project teams''~\cite{klein_engineering_2015}.
 This number has only grown since then:
 ``as of 2018, there are 29 different project teams, with over 1,100 students and over \$1,000,000 in funding''~\cite{noauthor_project_2018}.
@@ -35,7 +38,6 @@ As of the time of writing this report, the endowed position of project team dire
 In this report, I will attempt to remedy some of that lack of information.
 In Section~\ref{sec:background}, I will detail the background of project teams at Cornell, including the origins of some of the oldest project teams at Cornell, along with the creation of project teams as an official program at Cornell.
 In Section~\ref{sec:timeline}, I will discuss the general timeline of project teams at Cornell, including the explosion in popularity in recent years.
-In Section~\ref{sec:funding}, I will investigate the sources of funding for project teams at Cornell. \todo{is this needed}
 Finally, in Section~\ref{sec:cuauv}, I will delve into the history of a specific project team, the Cornell University Autonomous Underwater Vehicle team (CUAUV), to explore how rich the history is for just one of Cornell's 29 thriving student-led project teams.
 
 \section{Institutional Background}
@@ -63,6 +65,23 @@ Similar 2-credit courses are also offered by Cornell AppDev~\cite{noauthor_corne
 \section{Timeline}
 \label{sec:timeline}
 
+As discussed in Section~\ref{sec:background}, the oldest project teams at Cornell date back 20-30 years.
+Most, however, follow a more Zipfian distribution, with over two thirds of them having been started in the last 10 years, and nearly half being started in the last 5.
+``We registered Hyperloop as a project team because that was the best way to get resources and support from Cornell for our project'' said Alana Marzoev (a founding team lead of the Cornell Hyperloop project team) when asked about why she helped form Cornell Hyperloop as a project team rather than just the club that it was before~\cite{marzoev_rationale_2018}.
+
+These overall trends can be explained by a number of factors.
+Most importantly is simply money: 2012 saw an official endowment and source of university funding for project teams, meaning that there is more incentive and rationale to create a project team.
+The explosion %
+\begin{landscape} %
+  \begin{figure} %
+    \include{timeline} %
+    \caption{Timeline of current project teams at Cornell} %
+    \label{fig:timeline} %
+  \end{figure} %
+\end{landscape} %
+\noindent in number of project teams also tracks the explosion in number of enrolled Computer Science students (Figure~\ref{fig:teamcount}.
+Given that a quarter of the project teams created in the last four years are primarily CS-related (CU AppDev, Cornell Data Science, and Design and Tech Initiative) and the majority of the rest have a CS component, the rapid increase in project teams and CS students could easily be related.
+
 \begin{figure}
   \center
   \includegraphics[width=0.7\textwidth]{teams-vs-cs}
@@ -70,35 +89,54 @@ Similar 2-credit courses are also offered by Cornell AppDev~\cite{noauthor_corne
   \label{fig:teamcount}
 \end{figure}
 
-As discussed in Section~\ref{sec:background}, the oldest project teams at Cornell date back 20-30 years.
-Most, however, follow a more Zipfian distribution, with over two thirds of them having been started in the last 10 years, and nearly half being started in the last 5.
-``We registered Hyperloop as a project team because that was the best way to get resources and support from Cornell for our project'' said Alana Marzoev (a founding team lead of the Cornell Hyperloop project team) when asked about why she helped form Cornell Hyperloop as a project team rather than just the club that it was before~\cite{marzoev_rationale_2018}.
-
-\begin{landscape}
-  \begin{figure}
-    \include{timeline}
-    \caption{Timeline of current project teams at Cornell}
-    \label{fig:timeline}
-  \end{figure}
-\end{landscape}
-
-These overall trends can be explained by a number of factors.
-Most importantly is simply money: 2012 saw an official endowment and source of university funding for project teams, meaning that there is more incentive and rationale to create a project team.
-The explosion in number of project teams also tracks the explosion in number of enrolled Computer Science students (Figure~\ref{fig:teamcount}.
-Given that a quarter of the project teams created in the last four years are primarily CS-related (CU AppDev, Cornell Data Science, and Design and Tech Initiative) and the majority of the rest have a CS component, the rapid increase in project teams and CS students could easily be related.
-
 
 \section{Case Study: CUAUV}
 \label{sec:cuauv}
 
-``The CUAUV team, as we know it today, was started by sophomores Serguei Vassilvitskii, Nidhi Kalra, Jack Chuang, and Walter Chang in September of 1999,''
-\cite{noauthor_cuauv_2003}
+Within the general trend of project team growth at Cornell, it is interesting to track the trajectory and history of individual project teams.
+As a member of CUAUV, I wanted to learn more about my team's history and past success and challenges. The Cornell University Autonomous Underwater Vehicle (CUAUV) team participates in the yearly RoboSub competition, building an autonomous submarine to complete what is effectively an underwater obstacle course.
 
 
+``The CUAUV team, as we know it today, was started by sophomores Serguei Vassilvitskii, Nidhi Kalra, Jack Chuang, and Walter Chang in September of 1999''
+\cite{noauthor_cuauv_2003}. CUAUV was founded as BRAIN, the Big Red Artificial Intelligence Navigator, and competed in the year 2000 RoboSub competition, taking 2nd place (see Table~\ref{table:cuauv}).
+Despite its youth, the team immediately picked up 40 students, a count which it has roughly continued to this day.
+
+In 2003, BRAIN renamed itself to CUAUV.
+That year also saw more major organizational changes to CUAUV, along with a more through documentation of them than would otherwise be possible, through Christopher Caufield's Master of Engineering project, ``Project management and systems engineeering practices of the Cornell University Autonomous Underwater Vehicle team: present and future''~\cite{caufield_project_2004}.
+Caufield stated that ``the team is larger this year than ever before'', and better project management techniques were needed ``if the team was to work effectively at this size''.
+This resulted in splitting the team up into subgroups of Software, Hull Propulsion and Infrastructure, and Sensors; descendents of which still exist today.
+Caufield's project also saw the introduction of the Wiki to CUAUV, which allows for historical investigation of decisions made back to that year, including both design decisions for past subs and along with leadership and organizational changes.
+
+\begin{figure}
+  \centering
+
+  \begin{tabular}{|c||c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|}
+    \hline
+    \textbf{Placement} & \cellcolor{gray!50}2nd & 5th & \cellcolor{gray!50}2nd & \cellcolor{Goldenrod}1st & \cellcolor{gray!50}2nd & \textgreater 7th & \textgreater 7th & 4th & \textgreater 7th & \cellcolor{Goldenrod}1st & \cellcolor{Goldenrod}1st \\
+    \hline
+    \textbf{Year} & 2000 & 2001 & 2002 & 2003 & 2004 & 2005 & 2006 & 2007 & 2008 & 2009 & 2010\\
+    \hline
+  \end{tabular}
+  \vspace{0.3cm}
+
+  \begin{tabular}{|c||c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|}
+    \hline
+    \textbf{Placement} & \cellcolor{gray!50}2nd & \cellcolor{Goldenrod}1st & \cellcolor{Goldenrod}1st & \cellcolor{Goldenrod}1st & \textgreater 8th & \cellcolor{RawSienna!75}3rd & \cellcolor{Goldenrod}1st\\
+    \hline
+    \textbf{Year} & 2011 & 2012 & 2013 & 2014 & 2015 & 2016 & 2017\\
+    \hline
+  \end{tabular}
+  \captionof{table}{CUAUV historical placement~\cite{noauthor_robosub_2017}}
+  \label{table:cuauv}
+\end{figure}
 
 \section{Conclusion}
 \label{sec:conclusion}
 
+From the 32 year veterans to the fresh-faced 1-year-olds, student-led project teams play a fundamental role in Cornell's success as an engineering school.
+As of April 28, 2018, Cornell Engineering's website features a picture of the Cornell Mars Rover team~\cite{fleischman_rovers_2018} and the various web pages for prospective students all strongly advertise Cornell's 29 project teams, and for good reason -- anecdotally, project teams are a main reason that many students (myself included!) choose Cornell over other comparable schools.
+Project teams are a central part of many Cornell engineering students' undergraduate careers, and can be a powerful force in the learning and success of students.
+Cornell's project teams are clearly an establishment with staying power, and merit more study, not only into their history but also their impact on students and their long-term success.
 
 \bibliographystyle{plainnat}
 \bibliography{report}
